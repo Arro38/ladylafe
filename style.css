@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-nav li a{
+    padding: 0 15px;
+}
+.menu-nav li a{
+    text-decoration:none;
+    color:black;
+    position:relative;
+
+}
+
+.menu-nav li a:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 1px;
+    height: 100%;
+    background: black;
+}
+
+.menu-nav li:first-child a:after{
+    content: none;
+}
+.logo-nav{
+    width: 100px;
+}
+
+header{
+    background-image: url("header-bg.jpeg");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.626);
+    padding: 20px;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.title{
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.body{
+    width: 300px;
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
