@@ -5,11 +5,13 @@ fetch("https://ladylafe-api.formaterz.fr/api/articles")
   .then((data) => {
     let arrayArticles = data["hydra:member"];
     console.log(arrayArticles);
-    arrayArticles.forEach((article) => {
+    arrayArticles.slice(0, 12).forEach((article) => {
       cardListElement.innerHTML += `
       <div class="card">
       <img
-        src="https://source.unsplash.com/random/300x300/?people"
+        src="https://picsum.photos/300/300?random=${Math.floor(
+          Math.random() * 1000
+        )}"
         }
         alt="gossip"
       />
